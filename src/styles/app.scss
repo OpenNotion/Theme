@@ -68,3 +68,18 @@ $inuit-enable-paddings--large: true;
 $inuit-enable-paddings--none: true;
 @import "inuit-spacing/trumps.spacing";
 
+@import "settings.colours";
+@import "settings.sizes";
+
+@import "tools.mixins";
+
+@import "objects.flat-list";
+
+@import "objects.headers";
+@import "objects.navs";
+
+.container {
+  max-width: 86em;
+  width: 100%;
+  margin: auto;
+}

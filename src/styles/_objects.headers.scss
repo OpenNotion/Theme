@@ -1,0 +1,23 @@
+.site-header {
+
+}
+
+.site-header__nav {
+	background: $colour-light-grey;
+	border-bottom: 4px solid $colour-dark-grey;
+	color: $colour-purple;
+	a {
+		color: $colour-purple;
+		text-decoration: none;
+		display: block;
+		padding: 5px;
+		margin-bottom: -4px;
+		border-bottom: 4px solid $colour-dark-grey;
+		&:hover {
+			border-bottom-color: $colour-darker-grey;
+		}
+	}
+	li.current a {
+		border-bottom-color: $colour-darker-grey;
+	}
+}

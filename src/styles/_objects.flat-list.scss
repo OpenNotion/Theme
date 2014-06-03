@@ -1,0 +1,6 @@
+.flat-list {
+	@extend %bare-list;
+	li, .flat_list__item {
+		@include inline-block();
+	}
+}

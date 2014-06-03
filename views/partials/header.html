@@ -1,10 +1,8 @@
 <!doctype html>
-
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
 <!--[if gt IE 8]> <html class="no-js" lang="en"> 		   <![endif]-->
-
 <head>
 	<meta charset="utf-8">
 
@@ -27,25 +25,28 @@
 	{{ integration:analytics }}
 </head>
 
-<body class="{{ url:segments segment="1" default="home" }}" onload="prettyPrint()">
+<body class="{{ url:segments segment="1" default="home" }}">
+	<header class="site-header">
+		<nav class="site-header__nav nav">
+			<div class="container">
+				<ul class="flat-list">
+					{{ navigation:links group="header" }}
+				</ul>
+			</div>
+		</nav>
+		<div class="site-header__banner">
+			<div class="container">
+				<div class="brand">
+					<a href="{{ url:base }}" class="brand__logo">
+						<h1>{{ settings:site_name }}</h1>
+					</a>
+					<!-- <span class="brand__slogan">
+						{{ settings:site_slogan }}
+					</span> -->
+				</div>
+			</div>
+		</div>
+	</header>
 
 	<!-- container -->
 	<div class="container">
-
-		<header>
-			<div id="logo">
-				<a href="{{ url:base }}">
-					<h1>{{ settings:site_name }}</h1>
-				</a>
-
-				<span class="slogan">
-					{{ settings:site_slogan }}
-				</span>
-			</div>
-
-			<nav id="primary">
-				<ul>
-					{{ navigation:links group="header" }}
-				</ul>
-			</nav>
-		</header>

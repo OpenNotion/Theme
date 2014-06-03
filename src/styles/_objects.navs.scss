@@ -1,0 +1,8 @@
+.nav {
+	.flat-list li, .flat-list .flat-list__item {
+		padding-right: $size-nav-padding-right;
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
