@@ -1,0 +1,51 @@
+{
+  "name": "OpenNotion",
+  "version": "1.0.0",
+  "authors": [
+    "Euan Torano <euan@opennotion.net>"
+  ],
+  "description": "The OpenNotion PyroCMS theme.",
+  "main": "theme.php",
+  "license": "MIT",
+  "homepage": "http://opennotion.net",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies" : {
+    "modernizr" : "~2.8.*",
+    "jquery" : "*",
+    "inuit-defaults" : "latest",
+    "inuit-functions" : "latest",
+    "inuit-mixins" : "latest",
+    "inuit-normalize" : "latest",
+    "inuit-reset" : "latest",
+    "inuit-box-sizing" : "latest",
+    "inuit-shared" : "latest",
+    "inuit-clearfix" : "latest",
+    "inuit-page" : "latest",
+    "inuit-paragraphs" : "latest",
+    "inuit-headings" : "latest",
+    "inuit-lists" : "latest",
+    "inuit-tables" : "latest",
+    "inuit-images" : "latest",
+    "inuit-layout" : "latest",
+    "inuit-media" : "latest",
+    "inuit-flag" : "latest",
+    "inuit-box" : "latest",
+    "inuit-tabs" : "latest",
+    "inuit-widths" : "latest",
+    "inuit-spacing" : "latest",
+    "inuit-bare-list" : "latest",
+    "inuit-ui-list" : "latest",
+    "inuit-block-list" : "latest",
+    "inuit-buttons" : "latest"
+  },
+  "resolutions" : {
+    "inuit-functions" : "0.2.0"
+  }
+}

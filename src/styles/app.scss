@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import "inuit-defaults/settings.defaults";
+
+@import "inuit-functions/tools.functions";
+
+@import "inuit-mixins/tools.mixins";
+
+@import "inuit-normalize/generic.normalize";
+
+@import "inuit-reset/generic.reset";
+
+@import "inuit-box-sizing/generic.box-sizing";
+
+@import "inuit-shared/generic.shared";
+
+@import "inuit-clearfix/generic.clearfix";
+
+@import "inuit-page/base.page";
+
+@import "inuit-paragraphs/base.paragraphs";
+
+@import "inuit-headings/base.headings";
+
+@import "inuit-lists/base.lists";
+
+@import "inuit-images/base.images";
+
+@import "inuit-layout/objects.layout";
+
+@import "inuit-bare-list/objects.bare-list";
+
+@import "inuit-block-list/objects.block-list";
+
+// Override and enable settings and features inline, just before their partial
+// is imported.
+$inuit-enable-ui-list--small: true;
+@import "inuit-ui-list/objects.ui-list";
+
+@import "inuit-tables/objects.tables";
+
+$inuit-enable-media--large: true;
+$inuit-enable-media--rev: true;
+@import "inuit-media/objects.media";
+
+$inuit-enable-flag--large: true;
+$inuit-enable-flag--rev: true;
+@import "inuit-flag/objects.flag";
+
+@import "inuit-box/objects.box";
+
+$inuit-enable-btn--large: true;
+$inuit-btn-border-width: 2px;
+@import "inuit-buttons/objects.buttons";
+
+@import "inuit-tabs/objects.tabs";
+
+@import "inuit-widths/trumps.widths";
+
+$inuit-enable-margins: true;
+$inuit-enable-margins--small: true;
+$inuit-enable-margins--large: true;
+$inuit-enable-margins--none: true;
+
+$inuit-enable-paddings: true;
+$inuit-enable-paddings--small: true;
+$inuit-enable-paddings--large: true;
+$inuit-enable-paddings--none: true;
+@import "inuit-spacing/trumps.spacing";
+
