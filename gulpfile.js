@@ -81,7 +81,6 @@ gulp.task("scripts", function () {
 gulp.task("styles", function () {
 	return gulp.src([paths.css.src + "/app.scss"])
 		.pipe(sass({
-			sourcemap: true,
 			loadPath: [
 				paths.bower
 			]
