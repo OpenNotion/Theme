@@ -2,4 +2,33 @@
 	.container {
 		border-top: 2px solid $colour-dark-grey;
 	}
+	.site-footer__copyright {
+		padding: 5px 0;
+		font-size: 0.85em;
+		color: $colour-darker-grey;
+	}
+	.site-footer__nav {
+		font-size: 0.95em;
+		a {
+			color: $colour-purple;
+			text-decoration: none;
+			display: block;
+			padding: 5px;
+			margin-top: -2px;
+			border-top: 2px solid $colour-dark-grey;
+			&:hover {
+				color: $colour-darker-grey;
+				border-top-color: $colour-darker-grey;
+			}
+		}
+		.current {
+			a {
+				border-top-color: $colour-darker-grey;
+				color: $colour-darker-grey;
+			}
+		}
+		.flat-list__item, li {
+			padding-right: 5px;
+		}
+	}
 }
