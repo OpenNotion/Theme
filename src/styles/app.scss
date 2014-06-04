@@ -78,6 +78,10 @@ $inuit-enable-paddings--none: true;
 @import "objects.headers";
 @import "objects.navs";
 
+@import "objects.brand";
+
+@import "objects.footers";
+
 .container {
   max-width: 86em;
   width: 100%;

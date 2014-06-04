@@ -1,0 +1,9 @@
+.brand {
+	.brand__logo {
+		background: url('../img/logo.png') center center no-repeat;
+		width: 250px;
+		height: 63px;
+		@include hide-text();
+		@include inline-block();
+	}
+}

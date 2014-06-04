@@ -25,7 +25,7 @@ var paths = {
 		dest: "./css"
 	},
 	images: {
-		src: "./src/images",
+		src: "./src/img",
 		dest: "./img"
 	}
 };
