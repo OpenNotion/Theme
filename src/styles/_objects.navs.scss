@@ -6,3 +6,23 @@
 		}
 	}
 }
+
+.breadcrumb {
+	background: $colour-light-grey;
+	font-size: 0.8em;
+	border-radius: 2px;
+	border: 1px solid $colour-dark-grey;
+	color: $colour-darker-grey;
+	.breadcrumb__item a, .breadcrumb__item span {
+		padding: 5px;
+		display: block;
+		&::after {
+			margin-left: 5px;
+			content: "/";
+		}
+	}
+	.breadcrumb__item:last-child a::after, .breadcrumb__item:last-child span::after {
+		content: "";
+		margin: 0;
+	}
+}

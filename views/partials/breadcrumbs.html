@@ -1,11 +1,17 @@
 {{ if template:has_breadcrumbs }}
-   <p class="breadcrumbs">
-		{{ template:breadcrumbs }}
-			{{ if uri }}
-				{{ url:anchor segments=uri title=name }}&nbsp;>&nbsp;
-			{{ else }}
-				<span class="current">{{ name }}</span>
-			{{ endif }}
-		{{ /template:breadcrumbs }}
-	</p>
+   <nav class="breadcrumb">
+		<ol class="flat-list" itemscope itemprop="breadcrumb">
+			{{ template:breadcrumbs }}
+				{{ if uri }}
+					<li class="flat-list__item breadcrumb__item">
+						{{ url:anchor segments=uri title=name }}&nbsp;>&nbsp;
+					</li>
+				{{ else }}
+					<li class="flat-list__item breadcrumb__item breadcrumb__item--current">
+						<span>{{ name }}</span>
+					</li>
+				{{ endif }}
+			{{ /template:breadcrumbs }}
+		</ol>
+	</nav>
 {{ endif }}

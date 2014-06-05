@@ -1293,6 +1293,22 @@ img[height] {
   .nav .flat-list li:last-child, .nav .flat-list .flat-list__item:last-child {
     padding-right: 0; }
 
+.breadcrumb {
+  background: #eeeeee;
+  font-size: 0.8em;
+  border-radius: 2px;
+  border: 1px solid #d1d1d1;
+  color: #666666; }
+  .breadcrumb .breadcrumb__item a, .breadcrumb .breadcrumb__item span {
+    padding: 5px;
+    display: block; }
+    .breadcrumb .breadcrumb__item a::after, .breadcrumb .breadcrumb__item span::after {
+      margin-left: 5px;
+      content: "/"; }
+  .breadcrumb .breadcrumb__item:last-child a::after, .breadcrumb .breadcrumb__item:last-child span::after {
+    content: "";
+    margin: 0; }
+
 .brand .brand__logo {
   background: url("../img/logo.png") center center no-repeat;
   width: 250px;
