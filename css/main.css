@@ -1302,9 +1302,11 @@ img[height] {
   .breadcrumb .breadcrumb__item a, .breadcrumb .breadcrumb__item span {
     padding: 5px;
     display: block; }
-    .breadcrumb .breadcrumb__item a::after, .breadcrumb .breadcrumb__item span::after {
-      margin-left: 5px;
-      content: "/"; }
+  .breadcrumb .breadcrumb__item--current {
+    font-weight: bold; }
+  .breadcrumb a {
+    text-decoration: none;
+    color: #666666; }
   .breadcrumb .breadcrumb__item:last-child a::after, .breadcrumb .breadcrumb__item:last-child span::after {
     content: "";
     margin: 0; }
